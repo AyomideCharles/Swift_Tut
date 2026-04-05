@@ -9,7 +9,31 @@ import SwiftUI
 
 struct FreestyleTab: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            Tab("Home", systemImage: "person.and.person"){
+                Freestyle()
+            }
+//            Freestyle()
+//                .tabItem{
+//                    Label("Home", systemImage: "person.and.person")
+//                }
+//            Freestyle()
+//                .tabItem{
+//                    Label("Welcome", systemImage: "person.and.person")
+//                }
+            Tab("Welcome", systemImage: "person.and.person"){
+                WelcomePage()
+            }
+            Tab("Dice", systemImage: "dice"){
+                DicePage()
+            }
+
+            Tab("Profile", systemImage: "person.crop.circle.fill"){
+                Profile()
+            }
+
+
+        }
     }
 }
 

@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct WelcomePage: View {
     var body: some View {
         VStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 30)
                     .frame(width: 200, height: 200)
-                    .foregroundStyle(.red)
+                    .foregroundStyle(.tint)
                 Image(systemName: "figure.2.and.child.holdinghands")
                     .font(.system(size: 70))
                     .foregroundStyle(Color.white)
@@ -41,7 +41,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    WelcomePage()
 }
 
 
@@ -78,3 +78,4 @@ struct DayForcast: View {
         .padding()
     }
 }
+
